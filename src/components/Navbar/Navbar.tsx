@@ -1,14 +1,15 @@
 import React from 'react'
 import logo from '../../images/logo.png'
 import user from '../../images/user.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <header className="header">
       <nav className="navbar navbar-expand-md bg-light">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img src={logo} className="img-fluid" alt="" />
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -16,7 +17,7 @@ const Navbar = () => {
           data-toggle="collapse"
           data-target="#collapisbleNavbar"
         >
-          <span className="navbar-toggler-icon"> </span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div
@@ -25,24 +26,24 @@ const Navbar = () => {
         >
           <ul className="navbar-nav main_menu">
             <li className="nav-item">
-              <a href="/" className="nav-link active">
+              <Link to="/" className="nav-link active">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/s.html" className="nav-link">
+              <Link to="/testseries" className="nav-link">
                 Test Series
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <Link to="/login" className="nav-link">
                 Login & Signup
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item dropdown show">
-              <a
-                href="/"
+              <Link
+                to="/profile"
                 className="nav-link"
                 id="dropdownMenuLink"
                 data-toggle="dropdown"
@@ -54,14 +55,14 @@ const Navbar = () => {
                   className="img-fluid profile_icon"
                   alt=""
                 />
-              </a>
+              </Link>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a href="/" className="dropdown-item nav-link">
+                <Link to="/profile" className="dropdown-item nav-link">
                   Profile
-                </a>
-                <a href="/" className="dropdown-item nav-link logout-link">
+                </Link>
+                <Link to="/login" className="dropdown-item nav-link logout-link">
                   Logout
-                </a>
+                </Link>
               </div>
             </li>
           </ul>

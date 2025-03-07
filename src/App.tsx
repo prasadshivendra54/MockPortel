@@ -1,7 +1,7 @@
 
 import './App.css';
 import './css/globle.css'
-import Routing from './Routes/Routing';
+import Routing from './routes/Routing';
 
 function App() {
   return (

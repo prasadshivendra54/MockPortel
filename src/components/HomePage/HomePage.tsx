@@ -3,7 +3,7 @@ import LandingPage from './LandingPage'
 import AboutPage from './AboutPage'
 import TestCardPage from './TestCardPage'
 import StudentReviews from './StudentReviews'
-import ContactForm from './ContactForm'
+import Contact from '../Contact/Contact'
 
 const HomePage = () => {
   return (
@@ -11,8 +11,8 @@ const HomePage = () => {
         <LandingPage />
         <AboutPage />
         <TestCardPage />
-        {/* <StudentReviews />
-        <ContactForm /> */}
+        {/* <StudentReviews /> */}
+        <Contact />
     </div>
   )
 }

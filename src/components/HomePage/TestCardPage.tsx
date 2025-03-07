@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TestCardPage = () => {
   return (
@@ -11,7 +12,7 @@ const TestCardPage = () => {
                         <p className="mb-0">Get Access to all tests for</p>
                         <p className="highlighted-text"><span>200+</span> exams</p>
                         <p className="highlighted-text small-text">Start's from just <span>&#8377;100</span>/month</p>
-                        <a href="#" className="white_btn">Buy Test Pass</a>
+                        <Link to="/plans" className="white_btn">Buy Test Pass</Link>
                     </div>
                 </div>
             </div>

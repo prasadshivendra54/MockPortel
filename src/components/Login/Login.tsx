@@ -1,4 +1,6 @@
 import React from "react";
+import LoginSlider from "./LoginSlider";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -28,44 +30,9 @@ const Login = () => {
                   ></li>
                 </ol>
                 <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="outer_slide">
-                      <span className="logos">
-                        <img src="images/logoWhite.png" />
-                      </span>
-                      <h2>Move to What Moves you</h2>
-                      <p>
-                        {" "}
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod
-                      </p>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="outer_slide">
-                      <span className="logos">
-                        <img src="images/logoWhite.png" />
-                      </span>
-                      <h2>Move to What Moves you</h2>
-                      <p>
-                        {" "}
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod
-                      </p>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="outer_slide">
-                      <span className="logos">
-                        <img src="images/logoWhite.png" />
-                      </span>
-                      <h2>Move to What Moves you</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod
-                      </p>
-                    </div>
-                  </div>
+                  <LoginSlider />
+                  <LoginSlider />
+                  <LoginSlider />
                 </div>
               </div>
             </div>
@@ -99,35 +66,35 @@ const Login = () => {
                   <div className="form-group">
                     <label className="checkbox">
                       <input type="checkbox" />
-                      <i className="input-helper"></i> Remember me{" "}
+                      <i className="input-helper"></i> Remember me
                     </label>
                   </div>
 
                   <div className="form-group">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="forgot_pass"
                       onClick={(e) => e.target}
                     >
                       Forgot Password?{" "}
-                    </a>
-                    <a href="index.html" className="login-btn">
+                    </Link>
+                    <Link to="/testseries" className="login-btn">
                       Login
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="tag_line">
                   New User?{" "}
-                  <a href="/" onClick={(e) => e.target}>
+                  <Link to="/" onClick={(e) => e.target}>
                     {" "}
                     Register Here
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="form-section forget-password">
                 <div className="form-heading">
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="back-btn"
                     onClick={(e) => e.target}
                   >
@@ -135,9 +102,8 @@ const Login = () => {
                       <img src="images/arrow.svg" alt="" />
                     </i>{" "}
                     Back to Login{" "}
-                  </a>
+                  </Link>
                   <h2>Forgot Password</h2>
-                  {/* <p>Login to Offer Check Agent web portal</p> */}
                 </div>
                 <div className="main-form">
                   <div className="form-group">
@@ -146,26 +112,25 @@ const Login = () => {
                       type="email"
                       className="form-control"
                       placeholder="johnappleased@gmail.com"
-                      // autofocus=""
                     />
                     <div className="error-msg"></div>
                   </div>
 
                   <div className="form-group">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="login-btn"
                       onClick={(e) => e.target}
                     >
                       Done
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="form-section register">
                 <div className="form-heading">
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="back-btn"
                     onClick={(e) => e.target}
                   >
@@ -173,7 +138,7 @@ const Login = () => {
                       <img src="images/arrow.svg" alt="" />
                     </i>{" "}
                     Back to Login{" "}
-                  </a>
+                  </Link>
                   <h2>REGISTER</h2>
                   <p>
                     It is easy to register with us. Let’s create your account.
@@ -199,7 +164,6 @@ const Login = () => {
                           type="text"
                           className="form-control"
                           placeholder="Appleased"
-                          // autofocus=""
                         />
                         <div className="error-msg"></div>
                       </div>
@@ -225,7 +189,6 @@ const Login = () => {
                           type="tel"
                           className="form-control"
                           placeholder="+91 9876543210"
-                          // autofocus=""
                         />
                         <div className="error-msg"></div>
                       </div>
@@ -256,10 +219,10 @@ const Login = () => {
                       </div>
 
                       <div className="form-group">
-                        <a href="/" className="login-btn">
+                        <Link to="/" className="login-btn">
                           {" "}
                           Register{" "}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -267,19 +230,19 @@ const Login = () => {
                   <div className="social_links">
                     <ul>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <img src="images/facebook.png" title="facebook" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <img src="images/twitter.png" title="twitter" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/">
+                        <Link to="/">
                           <img src="images/googleLogo.png" title="google" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

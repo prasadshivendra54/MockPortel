@@ -3,7 +3,6 @@ import user from '../../images/user.png'
 
 const StudentReviews = () => {
   return (
-    <div>
         <section className="testimonials_sec">
             <div className="container">
                 <div className="row align-items-end  wow zoomIn" data-wow-delay="0.3s">
@@ -91,7 +90,6 @@ const StudentReviews = () => {
                 </div>
             </div>
         </section>
-    </div>
   )
 }
 

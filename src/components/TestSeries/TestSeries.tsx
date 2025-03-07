@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const TestSeries = () => {
   return (
@@ -17,9 +18,9 @@ const TestSeries = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   vel velit maximus
                 </p>
-                <a href="/" className="custom_btn">
+                <Link to="/examtest" className="custom_btn">
                   Take The Test
-                </a>
+                </Link>
               </div>
             </div>
           </div>

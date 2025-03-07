@@ -598,13 +598,6 @@ const ExamTest = () => {
                 with Sign.
               </li>
             </ul>
-            {/* <ul className="answeredSimble">
-                        <li><span className="current"> </span> Current </li>
-                        <li><span className="not_attempt"> </span>  Not Attempt </li>
-                        <li><span className="answered"> </span> Answered </li>
-                        <li><span className="not_answered"> </span> Not Answered </li>
-                        <li><span className="preview"> </span> Preview </li>
-                    </ul> */}
           </div>
           <div className="maintitle">
             <h3> Section:Lorem ipsum </h3>

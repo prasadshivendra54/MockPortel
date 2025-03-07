@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface ValidateCard {
     subTitle: string;
@@ -24,8 +25,8 @@ const Card:React.FC<React.PropsWithChildren<ValidateCard>> = ({
           </div>
           <div className="flip-card-back">
             <div className="links">
-              <a href="#">{testLinkOne}</a>
-              <a href="#">{testLinkTwo}</a>
+              <Link to="/examtest">{testLinkOne}</Link>
+              <Link to="/examtest">{testLinkTwo}</Link>
             </div>
           </div>
         </div>
